@@ -1,0 +1,20 @@
+<div class="expenses-wrapper">
+  <h2>Your expenses will be displayed here!</h2>
+  <div>
+    @for (expense of expenses; track expense) {
+      <app-expense-card
+        [created_at]="expense.created_at"
+        [description]="expense.description"
+        [title]="expense.title"
+        [value]="expense.value"
+      >
+
+
+      </app-expense-card>
+
+    } @empty {
+      <h3>Unable to fetch data</h3>
+    }
+
+  </div>
+</div>

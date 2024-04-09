@@ -1,3 +1,9 @@
 import { Routes } from '@angular/router';
+import {ExpensesComponent} from "./expenses/expenses.component";
 
-export const routes: Routes = [];
+export const routes: Routes = [
+  {
+    path: 'expenses',
+    component: ExpensesComponent
+  }
+];

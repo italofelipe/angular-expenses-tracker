@@ -1,0 +1,8 @@
+.expenses-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  font-family: Calibri, sans-serif;
+}
